@@ -1,34 +1,155 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Portofolio C'oodiee | TKJ Engineer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C'oodiee Tech Terminal | TKJ Portfolio</title>
+    
     <style>
-        body { font-family: sans-serif; background: #0d1117; color: white; text-align: center; }
-        .card { background: #161b22; padding: 15px; margin: 10px auto; width: 80%; border: 1px solid #30363d; border-radius: 8px; text-align: left; }
-        h1 { color: #58a6ff; }
-        .pro-tag { background: #238636; color: white; padding: 2px 8px; border-radius: 10px; font-size: 12px; }
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --text-color: #c9d1d9;
+            --accent: #58a6ff;
+            --success: #3fb950;
+            --error: #f85149;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .terminal-card {
+            background: var(--card-bg);
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 600px;
+            padding: 25px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.7);
+            transition: transform 0.3s ease;
+        }
+
+        .terminal-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+        }
+
+        h1 { color: var(--accent); margin-top: 0; font-size: 24px; }
+        
+        .status-bar {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .badge {
+            background: #21262d;
+            border: 1px solid #30363d;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            color: var(--accent);
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            background: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 6px;
+            color: white;
+            margin: 15px 0;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        input:focus { border-color: var(--accent); }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+
+        button:hover { opacity: 0.8; }
+
+        #display {
+            margin-top: 20px;
+            padding: 15px;
+            background: #010409;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            min-height: 40px;
+            font-size: 14px;
+        }
+
+        .log-success { color: var(--success); }
+        .log-error { color: var(--error); }
     </style>
 </head>
 <body>
-    <h1>C'OODIEE PROJECTS</h1>
-    <p>12th Grade TKJ Student | Python Developer</p>
-    
-    <div class="card">
-        <h3>1. TKJ IP Analyzer <span class="badge pro-tag">Pro</span></h3>
-        <p>Analisis IP Address, Biner, dan Kelas IP otomatis.</p>
-    </div>
-    
-    <div class="card">
-        <h3>2. Subnet Pro (CIDR) <span class="badge pro-tag">Pro</span></h3>
-        <p>Kalkulator Subnetting modern berbasis CIDR untuk Network & Broadcast.</p>
+
+    <div class="terminal-card">
+        <h1>C'OODIEE TECH TERMINAL</h1>
+        <div class="status-bar">
+            <span class="badge">Grade 12 TKJ</span>
+            <span class="badge">Python Dev</span>
+            <span class="badge">Networking</span>
+        </div>
+
+        <p>Masukkan alamat IP Host untuk simulasi analisis jaringan:</p>
+        <input type="text" id="ipAddress" placeholder="Contoh: 192.168.10.1">
+        <button onclick="runAnalysis()">JALANKAN ANALISIS</button>
+
+        <div id="display">
+            > System Ready. Waiting for input...
+        </div>
     </div>
 
-    <div class="card">
-        <h3>3. Cyber Security Tool</h3>
-        <p>Password strength checker dan generator password aman.</p>
-    </div>
+    <script>
+        function runAnalysis() {
+            const ip = document.getElementById('ipAddress').value;
+            const display = document.getElementById('display');
+            
+            if (!ip) {
+                display.innerHTML = `<span class="log-error">> Error: IP Address tidak boleh kosong!</span>`;
+                return;
+            }
 
-    <p>Lihat semua 10 program di GitHub saya!</p>
+            display.innerHTML = `> Analysing Host: ${ip}...<br>> Scanning ports...`;
+
+            // Simulasi proses analisis dengan timeout agar JS terlihat bekerja keras
+            setTimeout(() => {
+                const randomPing = Math.floor(Math.random() * 50) + 10;
+                display.innerHTML = `
+                    <span class="log-success">> Host ${ip} is UP</span><br>
+                    > Average Latency: ${randomPing}ms<br>
+                    > Status: Secure<br>
+                    > Analysis Complete.
+                `;
+            }, 1500);
+        }
+
+        // Animasi teks saat pertama kali dimuat
+        console.log("C'oodiee Terminal Initialized...");
+    </script>
+
 </body>
 </html>
 
