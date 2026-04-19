@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h2>TKJ DASHBOARD</h2>
+        <button onclick="runDiag()">START ANALYZER</button>
+        <div id="log"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
