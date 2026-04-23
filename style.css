@@ -1,5 +1,72 @@
-body { background: #0d1117; color: #58a6ff; font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-.card { background: #161b22; border: 2px solid #30363d; border-radius: 15px; padding: 30px; text-align: center; box-shadow: 0 0 20px rgba(88,166,255,0.3); }
-button { background: #238636; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-weight: bold; width: 100%; }
-#log { margin-top: 15px; color: #8b949e; font-family: monospace; text-align: left; }
+:root {
+    --bg-color: #010409;
+    --card-bg: #0d1117;
+    --text-main: #c9d1d9;
+    --accent: #58a6ff;
+    --border: #30363d;
+    --green: #238636;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.box {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 2.5rem;
+    width: 380px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+h1 {
+    color: var(--accent);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.terminal-box {
+    background: #000;
+    border-radius: 6px;
+    padding: 15px;
+    margin: 20px 0;
+    border: 1px solid var(--border);
+    text-align: left;
+    height: 120px;
+    overflow-y: auto;
+}
+
+#output {
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+    color: #3fb950;
+    line-height: 1.6;
+}
+
+button {
+    background-color: var(--green);
+    color: white;
+    border: none;
+    padding: 14px;
+    width: 100%;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #2ea043;
+    transform: translateY(-2px);
+}
 

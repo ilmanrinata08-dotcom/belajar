@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+    <meta charset="UTF-8">
+    <title>C'oodiee Network Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="card">
-        <h2>TKJ DASHBOARD</h2>
-        <button onclick="runDiag()">START ANALYZER</button>
-        <div id="log"></div>
+    <div class="box">
+        <h1>Net-Analyzer</h1>
+        <div class="terminal-box">
+            <div id="output">> System Idle...</div>
+        </div>
+        <button onclick="runScan()">RUN DIAGNOSTIC</button>
     </div>
     <script src="script.js"></script>
 </body>
