@@ -2,16 +2,21 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>C'oodiee Network Dashboard</title>
+    <title>C'oodiee Professional Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="box">
-        <h1>Net-Analyzer</h1>
-        <div class="terminal-box">
-            <div id="output">> System Idle...</div>
+    <div class="app-container">
+        <header>
+            <h2>NETWORK MONITOR v3.0</h2>
+            <p>Admin: ilmanrinata08-dotcom</p>
+        </header>
+        <div class="display-screen">
+            <div id="log-content">> System Standby...</div>
         </div>
-        <button onclick="runScan()">RUN DIAGNOSTIC</button>
+        <div class="action-area">
+            <button onclick="executeAnalysis()">START TRANSACTION SCAN</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

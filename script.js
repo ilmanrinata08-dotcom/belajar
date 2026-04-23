@@ -1,32 +1,20 @@
-const output = document.getElementById('output');
-
-function runScan() {
-    const steps = [
-        "[INFO] Initiating network scan...",
-        "[INFO] Target: 192.168.1.100",
-        "[WAIT] Checking open ports...",
-        "[OK] Port 80 (HTTP) is OPEN",
-        "[OK] Port 443 (HTTPS) is OPEN",
-        "[OK] Port 22 (SSH) is OPEN",
-        "[DONE] Scan completed successfully.",
-        "System secure. Admin: C'oodiee"
+function executeAnalysis() {
+    const log = document.getElementById('log-content');
+    const processSteps = [
+        "Connecting to secure gateway...",
+        "Validating client handshake...",
+        "Checking concurrency limits...",
+        "Transaction safety: VERIFIED",
+        "Load balance status: STABLE",
+        "All systems operational."
     ];
-
-    output.innerHTML = "";
-    let i = 0;
-
-    function nextLine() {
-        if (i < steps.length) {
-            const line = document.createElement('div');
-            line.textContent = steps[i];
-            output.appendChild(line);
-            output.scrollTop = output.scrollHeight;
-            i++;
-            setTimeout(nextLine, 700);
-        }
-    }
-    nextLine();
+    log.innerHTML = "";
+    processSteps.forEach((step, index) => {
+        setTimeout(() => {
+            const entry = document.createElement('div');
+            entry.innerHTML = `[${new Date().toLocaleTimeString()}] ${step}`;
+            log.appendChild(entry);
+        }, index * 800);
+    });
 }
-
-console.log("Network Script Engine V2.0 Ready");
 
