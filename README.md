@@ -1,36 +1,92 @@
-# My Python & Networking Journey 🚀
+# 🚀 Belajar — Koleksi Project Python & TKJ
 
-Halo! Saya **C'oodiee**, siswa kelas 12 SMK jurusan **Teknik Komputer dan Jaringan (TKJ)**. 
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00F7FF&center=true&vCenter=true&width=500&lines=Python+%26+Networking+Journey;Siswa+SMK+TKJ+2025;Coding+dari+Android+via+Termux" alt="Typing SVG" />
+</p>
 
-Repository ini adalah dokumentasi belajar saya dalam menguasai pemrograman Python dan teori jaringan komputer langsung dari perangkat Android menggunakan **Termux**.
-
-## 🛠️ Daftar 10 Program Python
-
-Berikut adalah penjelasan singkat dari setiap program yang telah saya buat:
-
-### 🌐 Networking & TKJ Pro
-1. **`tkj_analyzer.py`**: Menganalisis IP Address (Kelas A-E), menampilkan subnet mask default, dan mengubah IP menjadi angka biner otomatis.
-2. **`subnet_pro.py`**: Kalkulator Subnetting modern berbasis CIDR. Bisa menghitung Network ID, Broadcast ID, dan Range IP Host secara akurat.
-
-### 🔐 Cyber Security
-3. **`pass_secure.py`**: Alat pengetes kekuatan kata sandi. Menganalisis risiko brute-force dan memberikan saran password yang lebih kuat secara acak.
-
-### 💰 Finance & Logic
-4. **`target.py`**: Kalkulator target tabungan untuk menghitung sisa hari yang dibutuhkan sampai target uang tercapai.
-5. **`bunga.py`**: Simulasi perhitungan bunga bank tahunan untuk melihat perkembangan saldo.
-6. **`finansial.py`**: Alat pengatur keuangan harian sederhana untuk mencatat pengeluaran.
-7. **`masa_depan.py`**: Program kalkulasi aritmatika dasar untuk perencanaan tabungan masa depan.
-
-### 🎮 Fun & Basic Logic
-8. **`tebak.py`**: Game tebak angka interaktif untuk mengasah logika `if-else`.
-9. **`bom.py`**: Program perulangan (looping) pesan untuk memahami cara kerja `while` dan `for` loop.
-10. **`hello.py`**: Program pertama sebagai tanda dimulainya perjalanan koding saya.
-
-## 💻 Tech Stack
-- **Language:** Python 3
-- **Environment:** Termux (Android)
-- **Version Control:** Git & GitHub
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Termux-000000?style=for-the-badge&logo=linux&logoColor=white"/>
+</p>
 
 ---
-*Dibuat dengan penuh semangat oleh C'oodiee di perangkat Android.*
 
+## 📌 Tentang Repositori
+
+Repositori ini berisi kumpulan project dan latihan pemrograman
+yang dibuat selama menempuh pendidikan di SMK jurusan
+Teknik Komputer dan Jaringan (TKJ).
+
+Seluruh kode ditulis dan diuji langsung menggunakan
+smartphone Android melalui Termux — tanpa laptop.
+
+---
+
+## 📂 Daftar Project
+
+### 🔐 Keamanan & Jaringan
+
+| File | Deskripsi |
+|------|-----------|
+| `scanner.py` | Port scanner sederhana menggunakan socket, scan port standar jaringan |
+| `network_tool.py` | Network scanner dengan tampilan header, scan port umum TKJ |
+| `subnet_pro.py` | Subnet calculator CIDR lengkap — hitung Network ID, Broadcast, IP range |
+| `tkj_analyzer.py` | IP Analyzer — deteksi kelas IP, konversi biner, dan jumlah host |
+| `pass_secure.py` | Password strength checker + generator password acak 12 karakter |
+
+### 💰 Keuangan & Logika
+
+| File | Deskripsi |
+|------|-----------|
+| `finansial.py` | Kalkulator target finansial — hitung berapa bulan untuk capai target |
+| `bunga.py` | Simulasi tabungan dengan bunga 5% per tahun |
+| `masa_depan.py` | Proyeksi tabungan bulanan dalam jangka waktu tertentu |
+| `target.py` | Kalkulator pemburu target uang — output dalam bulan dan tahun |
+
+### 🎮 Mini Game & Latihan Dasar
+
+| File | Deskripsi |
+|------|-----------|
+| `tebak.py` | Game tebak angka 1-10 dengan perulangan while |
+| `bom.py` | Simulasi countdown timer dengan efek BOOM! |
+| `hello.py` | Program pertama — Hello World dari Termux |
+
+### 🌐 Web Interface
+
+| File | Deskripsi |
+|------|-----------|
+| `index.html` | Dashboard Network Monitor dengan tampilan terminal |
+| `script.js` | Animasi log sistem real-time dengan setTimeout |
+| `style.css` | Dark theme ala GitHub dengan efek glow hijau |
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+- **Python** — logika, jaringan, dan kalkulasi
+- **Socket** — koneksi dan scanning port
+- **HTML & CSS** — antarmuka web dark theme
+- **JavaScript** — animasi dan interaksi DOM
+- **Termux** — environment pengembangan di Android
+
+---
+
+## 👤 Developer
+
+**Ilman Rinata**
+Lulusan SMK Teknik Komputer dan Jaringan — 2025
+
+Tertarik di bidang keamanan jaringan, subnetting,
+dan pengembangan berbasis Python. Semua project
+dikerjakan dari smartphone menggunakan Termux.
+
+> *"Keterbatasan alat bukan halangan untuk terus berkarya."*
+
+---
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=ilmanrinata08-dotcom&show_icons=true&theme=tokyonight"/>
+</p>
